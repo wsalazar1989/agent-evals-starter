@@ -1,0 +1,12 @@
+[
+  { "id": "beach-couple", "input": "We are a couple looking for a cheap place near the beach in El Tunco, around $60 a night.",
+    "expect": { "toolsUsed": ["search_listings"], "mustContain": ["Surf Loft"], "mustNotContain": ["Casa del Lago"], "maxToolCalls": 3, "forbidFlags": ["unverified_price"] } },
+  { "id": "quote-total", "input": "How much is Casa del Lago for 3 nights, total with fees?",
+    "expect": { "toolsUsed": ["quote"], "mustContain": ["313.5"], "maxToolCalls": 3, "forbidFlags": ["unverified_price"] } },
+  { "id": "availability-xmas", "input": "Is Casa del Lago free on 2026-12-24 and 2026-12-25?",
+    "expect": { "toolsUsed": ["check_availability"], "mustContain": ["not"], "maxToolCalls": 3, "forbidFlags": ["unverified_price"] } },
+  { "id": "no-results", "input": "Find me a ski resort in El Salvador.",
+    "expect": { "toolsUsed": ["search_listings"], "mustNotContain": ["$"], "maxToolCalls": 3, "forbidFlags": ["unverified_price"] } },
+  { "id": "spanish-volcano", "input": "Quiero subir un volcán con mi familia, ¿qué hay?",
+    "expect": { "toolsUsed": ["search_listings"], "mustContain": ["Santa Ana"], "maxToolCalls": 3, "forbidFlags": ["unverified_price"] } }
+]

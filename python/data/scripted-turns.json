@@ -1,0 +1,24 @@
+{
+  "beach-couple": [
+    { "tool": "search_listings", "args": { "query": "beach surf El Tunco", "category": "stay", "maxPriceUsd": 60 } },
+    { "say": "Surf Loft El Tunco fits: a 2-person stay in El Tunco at $60 per night. Want me to check dates and give you the exact total?" }
+  ],
+  "quote-total": [
+    { "tool": "search_listings", "args": { "query": "Casa del Lago" } },
+    { "tool": "quote", "args": { "id": "stay-001", "nights": 3 } },
+    { "say": "Casa del Lago for 3 nights is $285 plus a $28.5 service fee, so $313.5 in total." }
+  ],
+  "availability-xmas": [
+    { "tool": "search_listings", "args": { "query": "Casa del Lago" } },
+    { "tool": "check_availability", "args": { "id": "stay-001", "dates": ["2026-12-24", "2026-12-25"] } },
+    { "say": "Casa del Lago is not available on those dates: both December 24 and 25 are already booked. Want me to look at other lake stays?" }
+  ],
+  "no-results": [
+    { "tool": "search_listings", "args": { "query": "ski resort" } },
+    { "say": "I found no ski resorts; El Salvador has volcano hikes and beaches instead. Would you like a mountain cabin or a volcano experience?" }
+  ],
+  "spanish-volcano": [
+    { "tool": "search_listings", "args": { "query": "volcano hiking family" } },
+    { "say": "Hay dos opciones con volcán: la caminata al volcán de Santa Ana (experiencia, $35 por persona) y la Cabaña Volcán en Cerro Verde para 6 personas ($120 la noche). ¿Te cotizo alguna?" }
+  ]
+}

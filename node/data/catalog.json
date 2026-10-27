@@ -1,0 +1,8 @@
+[
+  { "id": "stay-001", "category": "stay", "name": "Casa del Lago", "zone": "Lago de Coatepeque", "nightly_usd": 95, "capacity": 4, "tags": ["lake", "pool", "family"], "booked": ["2026-12-24", "2026-12-25", "2026-12-26"] },
+  { "id": "stay-002", "category": "stay", "name": "Surf Loft El Tunco", "zone": "El Tunco", "nightly_usd": 60, "capacity": 2, "tags": ["beach", "surf", "couples"], "booked": [] },
+  { "id": "stay-003", "category": "stay", "name": "Cabaña Volcán", "zone": "Cerro Verde", "nightly_usd": 120, "capacity": 6, "tags": ["mountain", "volcano", "hiking", "family"], "booked": ["2026-11-14", "2026-11-15"] },
+  { "id": "exp-001", "category": "experience", "name": "Santa Ana volcano hike", "zone": "Cerro Verde", "per_person_usd": 35, "capacity": 12, "tags": ["volcano", "hiking", "sunrise"], "booked": [] },
+  { "id": "exp-002", "category": "experience", "name": "Surf lesson at sunrise", "zone": "El Tunco", "per_person_usd": 25, "capacity": 6, "tags": ["beach", "surf", "lesson"], "booked": ["2026-11-20"] },
+  { "id": "food-001", "category": "food", "name": "Pupusería La Ceiba", "zone": "Lago de Coatepeque", "per_person_usd": 8, "capacity": 30, "tags": ["pupusas", "local", "cheap"], "booked": [] }
+]
